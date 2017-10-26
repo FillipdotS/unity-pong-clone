@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PongBall : MonoBehaviour {
 
@@ -8,7 +6,6 @@ public class PongBall : MonoBehaviour {
 
     Rigidbody2D rb2D;
 
-	// Use this for initialization
 	void Start () {
         rb2D = GetComponent<Rigidbody2D>();
 
@@ -17,12 +14,6 @@ public class PongBall : MonoBehaviour {
 
     float hitFactor(Vector2 ballPos, Vector2 racketPos, float racketHeight)
     {
-        // ascii art:
-        // ||  1 <- at the top of the racket
-        // ||
-        // ||  0 <- at the middle of the racket
-        // ||
-        // || -1 <- at the bottom of the racket
         return (ballPos.y - racketPos.y) / racketHeight;
     }
 
