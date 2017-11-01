@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Racket
+  - PongBall
   layers:
   - Default
   - TransparentFX
